@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>{{ site.data.info.title }}</title>
+        <link rel="stylesheet" href="{{site.baseurl}}/css/reveal.min.css">
+        <!-- <link rel="stylesheet" href="{{site.baseurl}}/css/night.min.css"> -->
+        <link rel="stylesheet" href="{{site.baseurl}}/css/gdicool.css" media="screen" />
+        <!-- <link rel="stylesheet" href="{{site.baseurl}}/gdidefault.css" media="screen" /> -->
+        <!-- <link rel="stylesheet" href="{{site.baseurl}}/gdilight.css" media="screen" /> -->
+        <!-- <link rel="stylesheet" href="{{site.baseurl}}/gdisunny.css" media="screen" /> -->
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="{{site.baseurl}}/css/zenburn.css">
+        <link rel="stylesheet" href="{{ 'css/styles.css' | relative_url }}">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ?
+            '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/print/pdf.css' :
+            '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/print/paper.css' ;
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+
+        <div class="reveal">
+            {% include slide_header.html %}
+            <div class="slides">
+	            {% include slides.html %}
+            </div>
+            {% include slide_footer.html %}
+        </div>
+
+        <script src="{{site.baseurl}}/js/head.min.js"></script>
+        <script src="{{site.baseurl}}/js/reveal.min.js"></script>
+        <script src="{{ 'js/revealConfig.js' | relative_url}}"></script>
+    </body>
+</html>

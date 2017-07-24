@@ -1,0 +1,99 @@
+---
+layout: slide
+title: "Name Servers"
+slug: "02-00-name-servers"
+group: 2
+sequence: 0
+---
+
+<section>
+    <h3>{{page.title}}</h3>
+
+    <p class="blue">What is a Name Server?</p>
+
+    <p class="fragment">
+        Name servers provide the glue between your domain name and
+        your IP address.
+    </p>
+
+    <p class="fragment">
+        IP addresses can change over time, while it's rare your domain
+        name will.
+    </p>
+
+    <table style="font-size: 0.8em">
+        <tr class="fragment">
+            <td>Domain: <span class="green">tamouse.org</span></td>
+            <td>IP Address: <span class="green">45.55.188.49</span></td>
+        </tr>
+        <tr class="fragment">
+            <td>Domain: <span class="green">google.com</span></td>
+            <td>IP Address: <span class="green">172.217.4.110</span></td>
+        </tr>
+        <tr class="fragment">
+            <td>Domain: <span class="green">gdiminneapolis.com</span></td>
+            <td>IP Address: <span class="green">192.185.79.136</span></td>
+        </tr>
+    </table>
+
+
+</section>
+
+
+
+<section>
+
+    <h4 class="no-print">{{page.title}}</h4>
+	<h3>Linking Domain to Host</h3>
+	<p class="blue">Your hosting and domain name may not come from the same company. The nameservers link your domain to your hosting.</p>
+    <div class="two-up">
+        <div class="left" style="font-size: 0.75em">
+	        <ul>
+		        <li><span class="blue">Domain Name:</span> MyCoolWebsite.com</li>
+		        <li><span class="blue">IP Address:</span> 199.167.200.163</li>
+		        <li><span class="blue">Name Server:</span> ns1.gdiminneapolis.com</li>
+	        </ul>
+
+        </div>
+        <div class="right">
+            <img src="{{site.baseurl}}/images/hostgator-nameservers.png"
+                 alt="hostgator nameservers"
+                 >
+        </div>
+    </div>
+
+</section>
+
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+
+
+
+	<h3>Domain Name Servers (DNS) </h3>
+	<ul>
+		<li>Connect your domain to your hosting</li>
+		<li>Propagating DNS</li>
+	</ul>
+
+	<img src="{{site.baseurl}}/images/nameservers.png" width="415" height="290">
+</section>
+
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+	<h3>Let's Develop It</h3>
+
+	<ul>
+	    <li>Sign into the account where you purchased your domain</li>
+
+        <li>Set your nameservers to:
+            <ul>
+                <li class="blue">ns1.gdiminneapolis.com</li>
+                <li class="blue">ns2.gdiminneapolis.com</li>
+            </ul>
+        </li>
+
+    </ul>
+
+</section>

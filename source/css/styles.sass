@@ -1,0 +1,91 @@
+---
+---
+
+$blue: #2196f3
+$gold: #e7ad52
+$green: #7CB342
+
+$banner_fg: #333
+$banner_bg: #CCC
+$controls_bg: aliceblue
+$hljs_default: #dcdcdc
+$header_text_shadow_color: black
+$header_text_shadow_offset: 5px
+$backgroundColor: #2b2b2b
+
+
+$banner_height: 50px
+
+=flex-row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+=banner
+  width: 100%
+  text-align: center
+  color: $banner_fg
+  background-color: $banner_bg
+  height: $banner_height
+  padding: 0 20px
+  position: absolute
+  left: 0
+  font-size: 0.6em
+  +flex-row
+
+.reveal
+  section
+    img.img-no-style
+      border: none
+      background: none
+      box-shadow: none
+
+    code
+      color: $green
+      &.hljs
+        color: $hljs_default
+    /* h1,h2,h3,h4,h5,h6
+    /*   text-shadow: $header_text_shadow_offset $header_text_shadow_offset $header_text_shadow_offset $header_text_shadow_color
+
+    .two-up
+      min-width: 100%
+      +flex-row
+      justify-content: space-around
+
+      .left, .right
+        flex: 1
+
+  .slide-header
+    +banner
+    top: 0
+  .slide-footer
+    +banner
+    border-top: 1px solid white
+    background: $backgroundColor
+    bottom: 0
+    .footer-left
+      +flex-row
+      justify-content: left
+      img
+        max-height: 50px
+    .footer-right
+      +flex-row
+      justify-content: right
+      margin-right: 200px
+      color: white
+      .twitter-icon
+        color: $blue
+        fill: $blue
+  .slide-number
+    bottom: inherit
+    top: 8px
+  .controls
+    background-color: $controls_bg
+
+  .blue
+    color: $blue
+  .gold
+    color: $gold
+  .green
+    color: $green

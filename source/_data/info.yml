@@ -1,0 +1,29 @@
+title: "Ship It!"
+description: "Publishing Your Website on the World-Wide Web"
+authors:
+  - name: "Susan Metoxin"
+    email: ""
+    twitter: ""
+    github: ""
+  - name: "Tamara Temple"
+    email: "tamara@tamouse.org"
+    twitter: "tamouse"
+    github: "tamouse"
+venue:
+  name: "T.B.D."
+  ssid: "T.B.D."
+  password: "T.B.D."
+images:
+  gdi_mpls_round_pink_badge:
+    "//gdimpls.s3.amazonaws.com/images/gdi-mpls-round-pink-badge.jpg"
+
+  gdi_dontbeshy_round_badge:
+    "//gdimpls.s3.amazonaws.com/images/gdi-dbs-round-badge.png"
+
+  gdi_footer_logo: "//gdimpls.s3.amazonaws.com/reveal.js/css/images/pink-logo.png"
+class_evaluation: "http://tinyurl.com/ydezvr9f"
+
+tweets:
+  - "@GDImpls"
+  - "@tamouse"
+  - "#ShipIt"

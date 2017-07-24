@@ -1,0 +1,260 @@
+---
+layout: slide
+title: "Publishing"
+slug: "03-00-publishing"
+group: 3
+sequence: 0
+---
+
+<section>
+	<h3>{{page.title}}</h3>
+    <p clsss="blue">What do we mean by "Publishing"?</p>
+    <p class="fragment">
+        The act of uploading your website to a web host that can be
+        reached by users.
+    </p>
+</section>
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+    <h3 class="blue">How do you publish?</h3>
+
+    <p class="fragment">There are many ways to do this.</p>
+    <p class="fragment">In this class, we're going to learn to use
+        the File Transfer Protocol (FTP)</p>
+    <p class="fragment">We'll be using a tool called "FileZilla" to
+    perform our FTP operations</p>
+</section>
+
+<section>
+
+
+    <h4 class="no-print">{{page.title}}</h4>
+	<h3>FTP Local Files to Host</h3>
+    <img src="{{site.baseurl}}/images/ftp.png" width="100%"
+         height="auto" alt="FTP">
+
+</section>
+
+<section>
+
+    <h4 class="no-print">{{page.title}}</h4>
+
+    <p class="blue">How does your site visitor find your website files?</p>
+    <img src="{{site.baseurl}}/images/dns-hosting-servers.png"
+         class="fragment"
+         width="100%" height="auto">
+
+</section>
+
+<section>
+
+    <h4 class="no-print">{{page.title}}</h4>
+
+    <h3>index.html or index.php</h3>
+
+    <p>
+        When the user enters: <br/>
+        <code>GDIMinneapolis.com/about/</code>
+    </p>
+
+    <p>
+        The server looks for and returns <br/>the first one of these it can find:
+        <ul>
+            <li><code>http://gdiminneapolis.com/about/index.php</code></li>
+            <li><code>http://gdiminneapolis.com/about/index.html</code></li>
+        </ul>
+    </p>
+
+    <aside class="notes">
+        <p>There are two things happening here:</p>
+        <ul>
+            <li>
+                <p>
+                    The hostname that the user capitalized is getting
+                    shifted to lower case. All domains are lower case.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The server looks the
+                    <code>index.php</code>
+                    file first, and returns it,
+                    else it looks for the
+                    <code>index.html</code>
+                    file and returns it.
+                </p>
+                <p>
+                    In other words, the
+                    <code>php</code>
+                    file takes precedence over the
+                    <code>html</code>
+                    file if they both occur in the same directory.
+                </p>
+            </li>
+        </ul>
+    </aside>
+
+</section>
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+	<h3>Pop quiz</h3>
+    <p>
+        What file does the server look for when the user enters:
+        <code>MyCoolWebsite.com/start</code>?
+    </p>
+    <p class="fragment blue">http://mycoolwebsite.com/start/index.html</p>
+
+</section>
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+    <h3>public_html</h3>
+    <ul>
+        <li>On the remote server, you will publish  your files to a
+            folder called, <code>public_html/</code>.</li>
+        <li>This is the default file location for this hosting provider.</li>
+    </ul>
+
+    <aside class="notes">
+        <p>The <code>public_html</code> folder is the standard folder
+            name on many web hosting providers, however, it's not the
+            only possibility.</p>
+        <p>Make sure to check with your hosting provider to find out
+            where you should upload your website files to.</p>
+        <p>Quite often, people forget to set the folder they should
+            publish to during the transfer. In FileZilla, you can set the
+            default folder that is opened with you connect to the
+            site. You may want to set it to <code>public_html/</code>
+            to avoid such confusion.</p>
+    </aside>
+</section>
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+	<h3>File Transfer Protocol or FTP</h3>
+	<ul>
+
+        <li>We use FTP to transfer files from our local host (our own
+            computer) to the remote server, at the hosting provider.</li>
+
+        <li>For this class we will use FileZilla to perform the FTP transfer.</li>
+
+    </ul>
+
+    <aside class="notes">
+	    <h3>Alternatives to FileZilla</h3>
+        <ul>
+            <li>Dreamweaver (integrated with the editor)</li>
+            <li>CyberDuck on macOS</li>
+        </ul>
+    </aside>
+
+</section>
+
+
+<section>
+    <aside class="notes">
+        <p>
+            The Filezilla UI is fairly easy once you get used to
+            it. If you have never done anything like an FTP transfer
+            before, though, it can be a little intimidating.
+        </p>
+
+        <p>
+            The QuickConnect area at the top lets you type straight in
+            if you know your web hosting IP address, user name, and
+            password.
+        </p>
+
+        <p>
+            You can also give the ftp address associated with your web
+            hosting address, sometimes it's <code>ftp.domainname</code>.
+        </p>
+    </aside>
+    <h4 class="no-print">{{page.title}}</h4>
+
+    <img src="{{site.baseurl}}/images/filezilla-1.jpg" class=""
+         style="max-width: 60%"
+         alt="Filezilla Sections" />
+
+</section>
+
+<section>
+    <aside class="notes">
+        <p>When you've connected, you'll need to pay attention to the
+            rest of the UI.</p>
+        <p>The top panel, under the quick connect bar, shows the
+        messages going back and forth between the web server and your
+        computer. Pay attention to any error messages that show up
+            here.</p>
+        <p>The left hand side is for the local machine. Use the upper
+        panel to navigate to the folder on your local machine
+            containing the source of your web site.</p>
+        <p>The right hand side is for the remote machine. Use the
+            upper pannel to navigate to the <code>public_html</code>
+            folder to receive the source of your web site.</p>
+        <p>NOTE: you should be <em>in</em> the folder.</p>.
+        <p>Select all the files and folders you want to transfer.</p>
+        <p><strong>SPECIAL NOTE:</strong> do NOT select the parent
+            folder indicated by the double dots.</p>
+        <p>Right-click the selection and choose the "start transfer"
+        option. You can also find this in the menu bar at the top of
+            the screen or window.</p>
+        <p>Watch the lowest pain that shows the transfers
+        happening. If there are any errors during the transfer, they
+        will show up in the "Failed Transfers" tab.</p>
+
+    </aside>
+    <h4 class="no-print">{{page.title}}</h4>
+
+    <img src="{{site.baseurl}}/images/filezilla-2.png" class=""
+         style="max-width: 60%"
+         alt="Filezilla Actions" />
+
+    <p>
+        <strong>Remember, if you run into any problems, ask a TA!</strong>
+    </p>
+</section>
+
+
+
+
+<section>
+    <h4 class="no-print">{{page.title}}</h4>
+    <h3>Let's Develop It</h3>
+    <ol style="font-size: 0.8em">
+        <li>Open Filezilla</li>
+        <li>Enter your IP address into Host (199.167.200.163), and
+            your username and password. </li>
+
+        <li>QuickConnect: Are you connected?</li>
+        <li>Find your local folder on the left side (you can navigate
+            like a Finder or Explorer window)</li>
+        <li>Find and open the <code>public_html</code> folder on the remote machine (right side)</li>
+        <li>Upload your index.html file to
+            the <code>public_html</code> folder</li>
+        <li>Check to see if your files are live by going to your
+            website domain address in the browser.</li>
+    </ol>
+
+</section>
+
+
+
+
+
+
+<section>
+
+    <h4 class="no-print">{{page.title}}</h4>
+
+	<h3>Celebrate!</h3>
+
+    <p>You are on the World Wide Web!</p>
+
+    <img src="https://media.giphy.com/media/TEFplLVRDMWBi/giphy.gif"
+         class="no-print" alt="" />
+
+</section>

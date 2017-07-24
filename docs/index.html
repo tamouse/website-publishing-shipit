@@ -1,0 +1,1064 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Ship It!</title>
+        <link rel="stylesheet" href="/website-publishing-shipit/css/reveal.min.css">
+        <!-- <link rel="stylesheet" href="/website-publishing-shipit/css/night.min.css"> -->
+        <link rel="stylesheet" href="/website-publishing-shipit/css/gdicool.css" media="screen" />
+        <!-- <link rel="stylesheet" href="/website-publishing-shipit/gdidefault.css" media="screen" /> -->
+        <!-- <link rel="stylesheet" href="/website-publishing-shipit/gdilight.css" media="screen" /> -->
+        <!-- <link rel="stylesheet" href="/website-publishing-shipit/gdisunny.css" media="screen" /> -->
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="/website-publishing-shipit/css/zenburn.css">
+        <link rel="stylesheet" href="/website-publishing-shipit/css/styles.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ?
+            '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/print/pdf.css' :
+            '//cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/print/paper.css' ;
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+
+        <div class="reveal">
+            
+            <div class="slides">
+	            
+<section>
+  <section>
+
+    <div class="two-up">
+        <div class="left">
+            <img src="//gdimpls.s3.amazonaws.com/images/gdi-dbs-round-badge.png"
+                 class="img-no-style no-print"
+                 alt="GDI Don't Be Shy Round Badge" />
+        </div>
+        <div class="right">
+            <h3>Ship It!</h3>
+            <p>Publishing Your Website on the World-Wide Web</p>
+            <ul>
+                <li>Network: T.B.D.</li>
+                <li>Password: T.B.D.</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <h4>Introduction</h4>
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://tamouse.github.io/website-publishing-shipit"
+               target="_blank" rel="noreferrer noopener">
+                Slides</a></li>
+        <li><a href="https://tamouse.github.io/website-publishing-shipit/notes.html"
+               target="_blank" rel="noreferrer noopener">
+                Printed Notes</a></li>
+        <li><a href="https://github.com/gdiminneapolis/LinksInfoNotes"
+               target="_blank" rel="noreferrer noopener">
+                More Links, Info, and Notes</a></li>
+        <li><a href="https://gdimpls.slack.com/archives/C69J2JAEQ"
+               target="_blank" rel="noreferrer noopener">
+                Slack <code>#devops-classes</code> channel
+        </a></li>
+    </ul>
+</section>
+
+
+<section>
+
+    <h4>Introduction</h4>
+
+
+    <h3>Welcome!</h3>
+    <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+	<p class ="green">Some "rules"</p>
+	<ul>
+		<li>We are here for you!</li>
+		<li>Every question is important</li>
+		<li>Help each other</li>
+		<li>Have fun</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h4>Introduction</h4>
+
+    <h3>Sponsors</h3>
+    <p>We'd like to thank our sponsors:</p>
+    <ul>
+        <li>T.B.D.</li>
+    </ul>
+
+    <aside class="notes">
+        Here is where they sponsor should say some words...
+    </aside>
+
+</section>
+
+<section>
+
+    <h4>Introduction</h4>
+
+
+    <h3>Some other info</h3>
+
+    <ul>
+        <li>
+            Slack Channel
+            <code>
+                
+            </code>
+        </li>
+
+
+        <li>Housekeeping</li>
+        <ul>
+            <li>Bathrooms</li>
+            <li>Drinks</li>
+            <li>Lunch / Dinner</li>
+        </ul>
+
+    </ul>
+
+</section>
+
+<section>
+
+    <h4>Introduction</h4>
+
+    <h3>Teachers</h3>
+    <ul>
+        <li>Instructor(s)</li>
+        <li>Teaching Assistants</li>
+        <li>Other GID leaders</li>
+    </ul>
+
+</section>
+
+
+
+<section>
+
+    <h4>Introduction</h4>
+
+    <h3>Students</h3>
+    <ul>
+        <li>Your name?</li>
+        <li>Experience you have with writing websites</li>
+        <li>What website do you want to get published?</li>
+        <li>Favorite breakfast food / drink?</li>
+    </ul>
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+
+  <h4 id="class-information">Class Information</h4>
+
+  <h3 id="learning-objectives">Learning Objectives</h3>
+
+  <p>By the end of this workshop, you will:</p>
+
+  <ul>
+    <li>
+      <p>Be able to manage your local and remote files and be able to publish (FTP) your files to the world.</p>
+    </li>
+    <li>
+      <p>Be comfortable with purchasing domains and hosting services.</p>
+    </li>
+    <li>
+      <p>Have a website published on the World Wide Web!</p>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h4 id="class-information-1">Class Information</h4>
+
+  <h3 id="steps-for-the-class">Steps for the Class</h3>
+
+  <ul>
+    <li><strong>Step 1:</strong> Purchase a domain</li>
+    <li><strong>Step 2:</strong> Set up website hosting</li>
+    <li><strong>Step 3:</strong> Set up name servers (DNS)</li>
+    <li><strong>Step 4:</strong> Publish your site</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h4 id="class-information-2">Class Information</h4>
+
+  <h3 id="contents">Contents</h3>
+
+  <ul>
+    <li>Introduction</li>
+    <li>Domains</li>
+    <li>Hosting</li>
+    <li>Name Servers</li>
+    <li>Publishing</li>
+    <li>C-Panel</li>
+    <li>Next Steps</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h4 id="class-information-3">Class Information</h4>
+
+  <h3 id="free-web-hosting">Free Web Hosting!</h3>
+
+  <p class="blue">Sponsored by Girl Develop It Minneapolis</p>
+
+  <ul>
+    <li>Full Service Hosting Plan</li>
+    <li>Allows for PHP/mySql Backend</li>
+    <li>Create email addresses</li>
+    <li>Add-on Domains</li>
+    <li>Valued at $99 per year</li>
+    <li>One year of hosting</li>
+  </ul>
+
+</section>
+
+</section>
+
+
+<section>
+  <h3>It's hard...</h3>
+
+<blockquote>
+    <p class="blue">"I'm not telling you it's going to be easy - <br>
+        I'm telling you it's going to be worth it."</p>
+    <p>&mdash; Art Williams</p>
+</blockquote>
+
+</section>
+
+
+<section>
+  <section>
+
+    <h3>Domains</h3>
+
+    <p>What's a domain?</p>
+
+    <ul>
+        <li class="fragment">
+            A domain is the name used to connect to your web server.
+        </li>
+
+        <li class="fragment">
+            It is connected to the IP Address via the Domain Name Service.
+        </li>
+
+        <li class="fragment">
+            Domains can be purchased from a registrar, such as Verisign,
+            GoDaddy, Gandi.Net, or NameCheap.
+        </li>
+
+    </ul>
+
+    <p class="fragment pink">
+        <em><small>There are 100s of places you can buy domain names from.</small></em>
+    </p>
+
+
+
+</section>
+
+
+
+<section>
+
+    <h4 class="no-print">Domains</h4>
+
+	<h3>Decisions About Buying a Domain</h3>
+	<div>
+		<ul>
+            <li>How to choose a top-level domain</li>
+			<li>How to choose a domain name</li>
+            <li>How to choose a registrar</li>
+			<li>Make sure you own your domain name</li>
+			<li>Most domains are $12-14 per year</li>
+		</ul>
+	</div>
+
+    <aside class="notes">
+
+        <p>There used to only be a few top-level domains you could
+            pick from. Now there are 100s, if not 1000s.</p>
+
+        <p>The most common are still
+            <code>.com</code>,
+            <code>.org</code>,
+            and
+            <code>.net</code>,
+            and the two-letter country codes.
+        </p>
+
+        <p>Popular new ones include
+            <code>.info</code>,
+            <code>.name</code>,
+            <code>.biz</code>,
+            and so on.
+        </p>
+
+        <h3>Concerns:</h3>
+
+        <p>
+            One highly popular TLD presently is
+            <code>.io</code>,
+            which is the country code assigned to the Indian Ocean
+            Territories. This is under the directorate of
+            the United Kingdom, and the occupants are primarily
+            American U.S. military personnel.
+        </p>
+        <p>
+            The native people of the IO Territories were forceably
+            removed from their islands by the British government in
+            order to provide the space for the US military.
+        </p>
+        <p>
+            The native people are <strong>still</strong> petitioning
+            to be allowed to return to their native land.
+        </p>
+        <p>
+            The native peoples receive absolutely <strong>NO</strong>
+            funds from the licensing of the <code>.io</code> top-level
+            domain. Think hard about whether it's worth it to you to
+            support such an oppressive situation.
+        </p>
+
+
+    </aside>
+</section>
+
+<section>
+
+    <h4 class="no-print">Domains</h4>
+
+    <h3 class="blue">"Should I buy privacy services for my
+        domain?"</h3>
+    <div class="fragment">
+        <p>Usually, the answer is "yes".</p>
+        <p>It provides real protection from people sniffing around,
+            looking to hack your site, or steal your domian.</p>
+    </div>
+
+    <aside class="notes">
+        <p>Privacy services cloak your personal information that is
+            kept in WHOIS databases. This information is required by the
+            ICANN in order to regular domains.</p>
+        <p>It is, however, publicly available, which means anyone can
+            query the WHOIS database and obtain information about you as
+            the domain owner. Such information include telephone numbers
+            and mailing address.</p>
+        <p>The privacy service will cloak this information, giving
+            you a chance to determine who can have access to it.</p>
+
+        <h3>Caveats</h3>
+
+        <p>Occasionally, having a privacy service can prevent you
+            from moving a domain name from on registrar to another. This
+            generally isn't a problem, though, and is something the
+            service providers try to prevent.</p>
+        <p>Going with a privacy service from one of the big name
+            registrars is usually a good thing.</p>
+    </aside>
+
+
+</section>
+
+<section>
+
+    <h4 class="no-print">Domains</h4>
+
+	<h3>Where to buy a domain</h3>
+    <p>From a registrar. There are quite a few domain name registars
+        out there. These are some of the ones we're familiar with.</p>
+	<div>
+		<ul>
+			<li><a href="https://www.namecheap.com/"
+                   target="_blank"
+                   rel="noreferrer noopener"
+                   >Namecheap</a>:
+			    lot's of people like them.</li>
+			<li><a href="http://hostgator.com"
+			       target="_blank"
+                   rel="noreferrer noopener">Hostgator.com</a>:
+                Great chatting service</li>
+			<li><a href="http://godaddy.com"
+                   target="_blank"
+                   rel="noreferrer noopener">GoDaddy.com</a>:
+                Great phone service,
+                but constantly upselling
+            </li>
+
+            <li>
+                <a href="https://gandi.net"
+                   target="_blank"
+                   rel="noferrer noopener">Gandi.Net</a>:
+                Great support, very helpful
+            </li>
+		</ul>
+	</div>
+</section>
+
+<section>
+
+
+    <h4 class="no-print">Domains</h4>
+
+	<h3>Let's Develop It!</h3>
+
+	<ol>
+		<li>In small groups, discuss purchasing a domain and decide if you would like to buy one for your website. </li>
+		<li>Purchase a domain if you would like to buy one. Your TA will assist you.</li>
+		<li>If you purchased a domain, write your domain name on a card and give it to the instructor. </li>
+    </ol>
+
+    <aside class="notes">
+
+        <p>
+            The instructor will attach your domain name to the free
+            hosting provided for your website.
+        </p>
+
+    </aside>
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+
+    <h3>Hosting</h3>
+
+
+	<p class="blue">What is website hosting?</p>
+	<ul>
+		<li class="fragment">Web Hosting is the server space on the Internet where you
+		    store your HTML, CSS, JavaScript, images, and other
+		    files. </li>
+
+	</ul>
+
+    <p class="no-print">&nbsp;</p>
+
+    <ul>
+		<li class="fragment">When you make a website and want other people to see it,
+		    you will need to publish it to a web hosting service.</li>
+
+    </ul>
+
+</section>
+
+
+
+
+<section>
+
+    <h4 class="no-print">Hosting</h4>
+
+
+	<h3>Pop quiz!</h3>
+
+    <div class="two-up">
+        <div class="left">
+            <p>Where are your <br/><strong>LOCAL</strong> files?</p>
+            <p class="no-print">&nbsp;</p>
+            <p class="fragment blue">On your computer</p>
+        </div>
+        <div class="right">
+            <p>Where are your <br/><strong>REMOTE</strong> files?</p>
+            <p class="no-print">&nbsp;</p>
+            <p class="fragment blue">On your web  host</p>
+        </div>
+    </div>
+
+</section>
+
+<section>
+
+    <h4 class="no-print">Hosting</h4>
+
+    <img src="/website-publishing-shipit/images/publishing-1.jpg"
+         class="no-print"
+         alt="" style="max-width: 75%"/>
+
+</section>
+<section>
+
+    <h4 class="no-print">Hosting</h4>
+
+
+    <img src="/website-publishing-shipit/images/publishing-2.jpg"
+         class="no-print"
+         alt="" style="max-width: 75%"/>
+
+</section>
+<section>
+
+    <h4 class="no-print">Hosting</h4>
+    <aside class="notes">
+        <p>You start by creating your web site locally</p>
+        <p>You then push it to you web hosting service (via FTP)</p>
+        <p>Your users can then see your website on their browsers</p>
+    </aside>
+
+    <img src="/website-publishing-shipit/images/publishing-3.jpg" class=""
+         alt="" style="max-width: 75%"/>
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+    <h3>Name Servers</h3>
+
+    <p class="blue">What is a Name Server?</p>
+
+    <p class="fragment">
+        Name servers provide the glue between your domain name and
+        your IP address.
+    </p>
+
+    <p class="fragment">
+        IP addresses can change over time, while it's rare your domain
+        name will.
+    </p>
+
+    <table style="font-size: 0.8em">
+        <tr class="fragment">
+            <td>Domain: <span class="green">tamouse.org</span></td>
+            <td>IP Address: <span class="green">45.55.188.49</span></td>
+        </tr>
+        <tr class="fragment">
+            <td>Domain: <span class="green">google.com</span></td>
+            <td>IP Address: <span class="green">172.217.4.110</span></td>
+        </tr>
+        <tr class="fragment">
+            <td>Domain: <span class="green">gdiminneapolis.com</span></td>
+            <td>IP Address: <span class="green">192.185.79.136</span></td>
+        </tr>
+    </table>
+
+
+</section>
+
+
+
+<section>
+
+    <h4 class="no-print">Name Servers</h4>
+	<h3>Linking Domain to Host</h3>
+	<p class="blue">Your hosting and domain name may not come from the same company. The nameservers link your domain to your hosting.</p>
+    <div class="two-up">
+        <div class="left" style="font-size: 0.75em">
+	        <ul>
+		        <li><span class="blue">Domain Name:</span> MyCoolWebsite.com</li>
+		        <li><span class="blue">IP Address:</span> 199.167.200.163</li>
+		        <li><span class="blue">Name Server:</span> ns1.gdiminneapolis.com</li>
+	        </ul>
+
+        </div>
+        <div class="right">
+            <img src="/website-publishing-shipit/images/hostgator-nameservers.png"
+                 alt="hostgator nameservers"
+                 >
+        </div>
+    </div>
+
+</section>
+
+
+<section>
+    <h4 class="no-print">Name Servers</h4>
+
+
+
+	<h3>Domain Name Servers (DNS) </h3>
+	<ul>
+		<li>Connect your domain to your hosting</li>
+		<li>Propagating DNS</li>
+	</ul>
+
+	<img src="/website-publishing-shipit/images/nameservers.png" width="415" height="290">
+</section>
+
+
+<section>
+    <h4 class="no-print">Name Servers</h4>
+	<h3>Let's Develop It</h3>
+
+	<ul>
+	    <li>Sign into the account where you purchased your domain</li>
+
+        <li>Set your nameservers to:
+            <ul>
+                <li class="blue">ns1.gdiminneapolis.com</li>
+                <li class="blue">ns2.gdiminneapolis.com</li>
+            </ul>
+        </li>
+
+    </ul>
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+	<h3>Publishing</h3>
+    <p clsss="blue">What do we mean by "Publishing"?</p>
+    <p class="fragment">
+        The act of uploading your website to a web host that can be
+        reached by users.
+    </p>
+</section>
+
+<section>
+    <h4 class="no-print">Publishing</h4>
+    <h3 class="blue">How do you publish?</h3>
+
+    <p class="fragment">There are many ways to do this.</p>
+    <p class="fragment">In this class, we're going to learn to use
+        the File Transfer Protocol (FTP)</p>
+    <p class="fragment">We'll be using a tool called "FileZilla" to
+    perform our FTP operations</p>
+</section>
+
+<section>
+
+
+    <h4 class="no-print">Publishing</h4>
+	<h3>FTP Local Files to Host</h3>
+    <img src="/website-publishing-shipit/images/ftp.png" width="100%"
+         height="auto" alt="FTP">
+
+</section>
+
+<section>
+
+    <h4 class="no-print">Publishing</h4>
+
+    <p class="blue">How does your site visitor find your website files?</p>
+    <img src="/website-publishing-shipit/images/dns-hosting-servers.png"
+         class="fragment"
+         width="100%" height="auto">
+
+</section>
+
+<section>
+
+    <h4 class="no-print">Publishing</h4>
+
+    <h3>index.html or index.php</h3>
+
+    <p>
+        When the user enters: <br/>
+        <code>GDIMinneapolis.com/about/</code>
+    </p>
+
+    <p>
+        The server looks for and returns <br/>the first one of these it can find:
+        <ul>
+            <li><code>http://gdiminneapolis.com/about/index.php</code></li>
+            <li><code>http://gdiminneapolis.com/about/index.html</code></li>
+        </ul>
+    </p>
+
+    <aside class="notes">
+        <p>There are two things happening here:</p>
+        <ul>
+            <li>
+                <p>
+                    The hostname that the user capitalized is getting
+                    shifted to lower case. All domains are lower case.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The server looks the
+                    <code>index.php</code>
+                    file first, and returns it,
+                    else it looks for the
+                    <code>index.html</code>
+                    file and returns it.
+                </p>
+                <p>
+                    In other words, the
+                    <code>php</code>
+                    file takes precedence over the
+                    <code>html</code>
+                    file if they both occur in the same directory.
+                </p>
+            </li>
+        </ul>
+    </aside>
+
+</section>
+
+<section>
+    <h4 class="no-print">Publishing</h4>
+	<h3>Pop quiz</h3>
+    <p>
+        What file does the server look for when the user enters:
+        <code>MyCoolWebsite.com/start</code>?
+    </p>
+    <p class="fragment blue">http://mycoolwebsite.com/start/index.html</p>
+
+</section>
+
+<section>
+    <h4 class="no-print">Publishing</h4>
+    <h3>public_html</h3>
+    <ul>
+        <li>On the remote server, you will publish  your files to a
+            folder called, <code>public_html/</code>.</li>
+        <li>This is the default file location for this hosting provider.</li>
+    </ul>
+
+    <aside class="notes">
+        <p>The <code>public_html</code> folder is the standard folder
+            name on many web hosting providers, however, it's not the
+            only possibility.</p>
+        <p>Make sure to check with your hosting provider to find out
+            where you should upload your website files to.</p>
+        <p>Quite often, people forget to set the folder they should
+            publish to during the transfer. In FileZilla, you can set the
+            default folder that is opened with you connect to the
+            site. You may want to set it to <code>public_html/</code>
+            to avoid such confusion.</p>
+    </aside>
+</section>
+
+<section>
+    <h4 class="no-print">Publishing</h4>
+	<h3>File Transfer Protocol or FTP</h3>
+	<ul>
+
+        <li>We use FTP to transfer files from our local host (our own
+            computer) to the remote server, at the hosting provider.</li>
+
+        <li>For this class we will use FileZilla to perform the FTP transfer.</li>
+
+    </ul>
+
+    <aside class="notes">
+	    <h3>Alternatives to FileZilla</h3>
+        <ul>
+            <li>Dreamweaver (integrated with the editor)</li>
+            <li>CyberDuck on macOS</li>
+        </ul>
+    </aside>
+
+</section>
+
+
+<section>
+    <aside class="notes">
+        <p>
+            The Filezilla UI is fairly easy once you get used to
+            it. If you have never done anything like an FTP transfer
+            before, though, it can be a little intimidating.
+        </p>
+
+        <p>
+            The QuickConnect area at the top lets you type straight in
+            if you know your web hosting IP address, user name, and
+            password.
+        </p>
+
+        <p>
+            You can also give the ftp address associated with your web
+            hosting address, sometimes it's <code>ftp.domainname</code>.
+        </p>
+    </aside>
+    <h4 class="no-print">Publishing</h4>
+
+    <img src="/website-publishing-shipit/images/filezilla-1.jpg" class=""
+         style="max-width: 60%"
+         alt="Filezilla Sections" />
+
+</section>
+
+<section>
+    <aside class="notes">
+        <p>When you've connected, you'll need to pay attention to the
+            rest of the UI.</p>
+        <p>The top panel, under the quick connect bar, shows the
+        messages going back and forth between the web server and your
+        computer. Pay attention to any error messages that show up
+            here.</p>
+        <p>The left hand side is for the local machine. Use the upper
+        panel to navigate to the folder on your local machine
+            containing the source of your web site.</p>
+        <p>The right hand side is for the remote machine. Use the
+            upper pannel to navigate to the <code>public_html</code>
+            folder to receive the source of your web site.</p>
+        <p>NOTE: you should be <em>in</em> the folder.</p>.
+        <p>Select all the files and folders you want to transfer.</p>
+        <p><strong>SPECIAL NOTE:</strong> do NOT select the parent
+            folder indicated by the double dots.</p>
+        <p>Right-click the selection and choose the "start transfer"
+        option. You can also find this in the menu bar at the top of
+            the screen or window.</p>
+        <p>Watch the lowest pain that shows the transfers
+        happening. If there are any errors during the transfer, they
+        will show up in the "Failed Transfers" tab.</p>
+
+    </aside>
+    <h4 class="no-print">Publishing</h4>
+
+    <img src="/website-publishing-shipit/images/filezilla-2.png" class=""
+         style="max-width: 60%"
+         alt="Filezilla Actions" />
+
+    <p>
+        <strong>Remember, if you run into any problems, ask a TA!</strong>
+    </p>
+</section>
+
+
+
+
+<section>
+    <h4 class="no-print">Publishing</h4>
+    <h3>Let's Develop It</h3>
+    <ol style="font-size: 0.8em">
+        <li>Open Filezilla</li>
+        <li>Enter your IP address into Host (199.167.200.163), and
+            your username and password. </li>
+
+        <li>QuickConnect: Are you connected?</li>
+        <li>Find your local folder on the left side (you can navigate
+            like a Finder or Explorer window)</li>
+        <li>Find and open the <code>public_html</code> folder on the remote machine (right side)</li>
+        <li>Upload your index.html file to
+            the <code>public_html</code> folder</li>
+        <li>Check to see if your files are live by going to your
+            website domain address in the browser.</li>
+    </ol>
+
+</section>
+
+
+
+
+
+
+<section>
+
+    <h4 class="no-print">Publishing</h4>
+
+	<h3>Celebrate!</h3>
+
+    <p>You are on the World Wide Web!</p>
+
+    <img src="https://media.giphy.com/media/TEFplLVRDMWBi/giphy.gif"
+         class="no-print" alt="" />
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+	<h3>cPanel Walkthrough</h3>
+
+    <p>Navigate to your cpanel at</p>
+    <p><code>MyCoolWebsite.com/cpanel</code></p>
+
+</section>
+
+<section>
+
+    <h3>Pop Quiz</h3>
+
+    <p>What page is returned from that URL?</p>
+    <p class="fragment">
+        <code>http://mycoolwebsite.com/cpanel/index.php</code>
+    </p>
+
+</section>
+
+
+
+<section>
+
+    <h3>cPanel Tasks</h3>
+
+    <ul>
+	    <li>Change your password</li>
+        <li>Remote Files</li>
+        <li>Email</li>
+        <li>Add-on Domains</li>
+        <li>Sub-domains</li>
+        <li>HTTP Passwords</li>
+        <li>phpMyAdmin</li>
+	</ul>
+
+</section>
+
+</section>
+
+
+<section>
+  <section class="hide-pdf">
+	<h3>Next Steps</h3>
+
+    <ul>
+
+        <li>Sign up for more GDI Mpls Courses!</li>
+
+        <li>Make websites for your friends and favorite
+            organizations</li>
+
+        <li>Make websites for your hobbies or start a blog</li>
+
+        <li>Come to Toast and Tech on Tuesdays at the Canteen</li>
+
+        <li>Post your questions, crows, and thoughts on Slack in <code>#coding-questions</code></li>
+
+    </ul>
+
+    <p class="fragment blue no-print">What ideas for next steps do you
+        have?</p>
+
+    <aside class="notes">
+
+        <p>Some more links and info:</p>
+
+        <ul>
+            <li><a href="https://tamouse.github.io/website-publishing-shipit"
+                   target="_blank" rel="noreferrer noopener">
+                    Slides
+            </a></li>
+            <li><a href="https://tamouse.github.io/website-publishing-shipit/notes.html"
+                   target="_blank" rel="noreferrer noopener">
+                    Notes
+            </a></li>
+            <li><a href="https://github.com/gdiminneapolis/LinksInfoNotes"
+                   target="_blank" relo="noreferer noopener">
+                    Notes, Links, Info repository
+            </a></li>
+        </ul>
+    </aside>
+
+</section>
+
+</section>
+
+
+<section>
+  <section>
+
+	<h3>Thank you!</h3>
+
+    <p>Thank you so much for particiating in a GDI Minneapolis
+        class!
+        Please take a moment to fill out the class
+        evaluation.</p>
+
+    <p>
+        Class name is
+        <span class="blue">"Ship It"</span>:
+        <br/>
+
+
+
+        <a href="http://tinyurl.com/ydezvr9f"
+           target="_blank"
+           rel="noreferrer noopener"
+           >http://tinyurl.com/ydezvr9f</a>
+    </p>
+
+</section>
+
+</section>
+
+
+
+            </div>
+            
+<footer class="slide-footer flex-row">
+
+    <div class="footer-left">
+        <img alt="" src="//gdimpls.s3.amazonaws.com/reveal.js/css/images/pink-logo.png"
+             />
+    </div>
+    <div class="footer-right" style="justify-content: right">
+        <div>
+            <!-- Generated by IcoMoon.io -->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 width="32" height="32" viewBox="0 0 32 32"
+                 class="twitter-icon"
+                 >
+                <title>twitter</title>
+                <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031
+                         1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675
+                         1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625
+                         0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169
+                         1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563
+                         0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919
+                         5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056
+                         0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131
+                         0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838
+                         2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156
+                         2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362
+                         2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681
+                         0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075
+                         3.275-3.394z"></path>
+            </svg>
+        </div>
+
+        <div>
+            
+            @GDImpls
+            
+            @tamouse
+            
+            #ShipIt
+            
+        </div>
+
+
+    </div>
+
+</footer>
+
+        </div>
+
+        <script src="/website-publishing-shipit/js/head.min.js"></script>
+        <script src="/website-publishing-shipit/js/reveal.min.js"></script>
+        <script src="/website-publishing-shipit/js/revealConfig.js"></script>
+    </body>
+</html>
