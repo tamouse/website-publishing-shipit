@@ -22,6 +22,11 @@ images:
 
   gdi_footer_logo: "//gdimpls.s3.amazonaws.com/reveal.js/css/images/pink-logo.png"
 class_evaluation: "http://tinyurl.com/ydezvr9f"
+gdimpls_meetup: "https://www.meetup.com/GDIMpls/"
+slack:
+  coding_questions: "https://gdimpls.slack.com/messages/C10RXJUQY"
+  devops_classes: "https://gdimpls.slack.com/messages/C69J2JAEQ"
+
 
 tweets:
   - "@GDImpls"
